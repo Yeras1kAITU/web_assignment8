@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio+Planner | Portfolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Portfolio+Planner</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="portfolio.html">Portfolio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="planner.html">Planner</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </header>
+
+    <main class="container mt-5 pt-5">
+        <div class="row">
+            <div class="col-12 text-center mb-5">
+                <h1>My Portfolio</h1>
+                <p class="lead">A showcase of my projects and skills</p>
+            </div>
+        </div>
+
+        <div class="row mb-4">
+            <div class="col-12 text-center">
+                <div class="btn-group" role="group">
+                    <button type="button" class="btn btn-outline-primary portfolio-filter active" data-filter="all">All</button>
+                    <button type="button" class="btn btn-outline-primary portfolio-filter" data-filter="web">Web Development</button>
+                    <button type="button" class="btn btn-outline-primary portfolio-filter" data-filter="design">Design</button>
+                    <button type="button" class="btn btn-outline-primary portfolio-filter" data-filter="mobile">Mobile Apps</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-4 portfolio-item fade-in" data-category="web">
+                <div class="card h-100">
+                    <img src="media/shop.png" class="card-img-top portfolio-img" alt="Project 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Shop Website</h5>
+                        <p class="card-text">A fully responsive shop platform with shopping cart and payment integration.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Web Development</small>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 portfolio-item fade-in" data-category="design">
+                <div class="card h-100">
+                    <img src="media/identity.png" class="card-img-top portfolio-img" alt="Project 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Brand Identity Design</h5>
+                        <p class="card-text">Complete brand identity package including logo, color palette, and brand guidelines.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Design</small>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 portfolio-item fade-in" data-category="mobile">
+                <div class="card h-100">
+                    <img src="media/fitness.avif" class="card-img-top portfolio-img" alt="Project 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Fitness Tracking App</h5>
+                        <p class="card-text">Mobile application for tracking workouts, nutrition, and fitness progress.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Mobile Apps</small>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 portfolio-item fade-in" data-category="web">
+                <div class="card h-100">
+                    <img src="media/yeras.jpg" class="card-img-top portfolio-img" alt="Project 4">
+                    <div class="card-body">
+                        <h5 class="card-title">Portfolio Website</h5>
+                        <p class="card-text">Responsive portfolio website with modern design and interactive elements.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Web Development</small>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 portfolio-item fade-in" data-category="design">
+                <div class="card h-100">
+                    <img src="media/uxui.jpg" class="card-img-top portfolio-img" alt="Project 5">
+                    <div class="card-body">
+                        <h5 class="card-title">UI/UX Redesign</h5>
+                        <p class="card-text">Complete UI/UX redesign for a SaaS application focusing on user experience.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Design</small>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="col-md-4 portfolio-item fade-in" data-category="mobile">
+                <div class="card h-100">
+                    <img src="media/eda.png" class="card-img-top portfolio-img" alt="Project 6">
+                    <div class="card-body">
+                        <h5 class="card-title">Recipe Sharing App</h5>
+                        <p class="card-text">Social platform for sharing and discovering recipes with nutritional information.</p>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <small class="text-muted">Mobile Apps</small>
+                            <button class="btn btn-sm btn-outline-primary">View Details</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <!-- Portfolio Modal -->
+    <div class="modal fade" id="portfolioModal" tabindex="-1">
+        <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="portfolioModalLabel">Project Details</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="portfolioModalImage" src="" class="img-fluid mb-3" alt="Project Image">
+                    <p id="portfolioModalDescription">Project description will appear here.</p>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-dark text-light py-4 mt-5">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2025 Portfolio+Planner from Yerassyl. All rights reserved.</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <a href="contact.html" class="text-light me-3">Contact Us</a>
+                    <a href="about.html" class="text-light">About</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
